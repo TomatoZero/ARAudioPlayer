@@ -19,10 +19,6 @@ public class AudioPlayerController : MonoBehaviour
             _animator.speed = 1;
         else if (_animator.speed == 1)
             _animator.speed = 0;
-        else
-        {
-            
-        }
     }
 
     public void Play()
@@ -40,5 +36,10 @@ public class AudioPlayerController : MonoBehaviour
     public void Forward()
     {
         _audioSource.time += 5;
+    }
+
+    public void SetAnimator(Animator animator)
+    {
+        _animator = animator;
     }
 }
